@@ -224,7 +224,12 @@ def create_emotion_pie(season, episode, character_list, include_neutral = False)
     if not include_neutral:
          emotion_filtered = emotion_filtered[(emotion_grouped['emotion'].isin(['Mad', 'Joyful', 'Scared', 'Sad', 'Powerful', 'Peaceful']))]
 
-    fig = px.pie(emotion_filtered, values='emotioncount', names='emotion', title=f'Emotion Pie Charts for Season:{season} Episode:{episode}', facet_col = "speaker", facet_col_wrap=4)
+    if episode != "ALL":
+        episode_name  = get_ep_title(season, episode)
+        fig = px.pie(emotion_filtered, values='emotioncount', names='emotion', title=f'Emotion Pie Charts for Season: {season} | Episode: {episode} | {episode_name}', facet_col = "speaker", facet_col_wrap=4)
+    else:
+        fig = px.pie(emotion_filtered, values='emotioncount', names='emotion', title=f'Emotion Pie Charts for Season: {season} | Episode: {episode}', facet_col = "speaker", facet_col_wrap=4)
+    
     fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
     fig.update_layout(autosize=True,height=400*math.ceil(len(character_list)/4))
     
