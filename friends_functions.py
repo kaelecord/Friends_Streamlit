@@ -13,12 +13,12 @@ from ast import literal_eval
 import math
 import streamlit as st
 
-full_data = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\friends_transcript_data.csv')
-plots = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\friends_plots_cleaned_data.csv') 
-speaker = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\speaker_cleaned_data.csv')
-char_net = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\character_network_cleaned_data.csv')
-emotion_data = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\emotion_cleaned_data.csv')
-episode_dates_titles = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\episodeDateTitle.csv')
+full_data = pd.read_csv('data/friends_transcript_data.csv')
+plots = pd.read_csv('data/friends_plots_cleaned_data.csv') 
+speaker = pd.read_csv('data/speaker_cleaned_data.csv')
+char_net = pd.read_csv('data/character_network_cleaned_data.csv')
+emotion_data = pd.read_csv('data/emotion_cleaned_data.csv')
+episode_dates_titles = pd.read_csv('data/episodeDateTitle.csv')
 speaker['season_ep'] = speaker['season_id'] + "_" + speaker['episode_id']
 
 def get_seasons():
