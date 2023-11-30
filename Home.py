@@ -38,10 +38,10 @@ with dataset:
 -   scene_id: Unique ID for scene number within an episode
 -   utterace_id: Unique ID for an utterance number within a scene
 -   speaker: name of character who speaks the line
--   tokens: list of lists - outer list for each sentence within a line - inner list for each word or punctuation within a sentence.
+-   tokens: list of lists - outer list for each sentence within a line - inner list for each word or punctuation within a sentence
 -   transcript: tokens joined to form a line spoken by a speaker for the utterance
--   emotion: emotion of line determined by results of  [Emory NLP Project](https://github.com/emorynlp/emotion-detection)
--   character_entities: characters spoken about within the utterance as determined by  [Emory NLP Project](https://github.com/emorynlp/character-identification)
+-   emotion: the emotion of line determined by results of  [Emory NLP Project - Emotion Detection](https://github.com/emorynlp/emotion-detection)
+-   character_entities: characters spoken about within the utterance as determined by  [Emory NLP Project - Character Identification](https://github.com/emorynlp/character-identification)
 -   num_talked_about: integer corresponding to number length of character_entities list''')
     
     st.subheader("Data Description")
