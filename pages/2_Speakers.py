@@ -15,7 +15,7 @@ from friends_functions import *
 
 speakers = st.container()
 
-friends_data = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\friends_transcript_data.csv')
+friends_data = pd.read_csv('data/friends_transcript_data.csv')
 
 with speakers:
     st.title("The One Where You Find Out Whose Talking")
