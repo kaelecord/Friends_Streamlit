@@ -28,7 +28,7 @@ with dataset:
     st.markdown("""The data used to create all aspects of this project comes from the Emory NLP Character Mining Project. The dataset is based on the popular TV show, Friends, that aired from September 22, 1994 through May 6, 2004. All data used was extracted from a collection of json files that can be found [here](https://github.com/emorynlp/character-mining/tree/master/json).""")
     st.markdown("Below is an example of the full data set that this project will be working with.")
     
-    friends_data = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Final Project\\data\\friends_transcript_data.csv')
+    friends_data = pd.read_csv('data/friends_transcript_data.csv')
     st.write(friends_data.sample(10))
     st.caption("Note: the num_talked_about is not in the original dataset.")
     
