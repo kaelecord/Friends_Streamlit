@@ -11,6 +11,8 @@ You can find the Streamlit app [here](https://friends.streamlit.app/)
 ## Data Description
 The data used to create all aspects of this project comes from the Emory NLP Character Mining Project. The dataset is based on the popular TV show, Friends, which aired from September 22, 1994, through May 6, 2004. All data used was extracted from a collection of JSON files that can be found [here](https://github.com/emorynlp/character-mining/tree/master/json).
 
+[Season 1 JSON](https://raw.githubusercontent.com/emorynlp/character-mining/master/json/friends_season_01.json)
+
 The following are the extracted columns:
 -   season_id: Unique ID for season number
 -   episode_id: Unique ID for episode number within a season
